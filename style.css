@@ -1,0 +1,39 @@
+.Corinthians {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .Corinthians .texto {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .Corinthians .imagem {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .Corinthians .imagem img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 400px) {
+    .Corinthians .imagem {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+  
+    .Corinthians .imagem img {
+      max-width: 90%;
+    }
+  }
